@@ -1,0 +1,466 @@
+/*
+Theme Name: Divi ONS Theme
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: AD-IOS Digital Marketing Co.
+Author URI: https://ad-ios.com/support
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Version: 1.2.0
+*/
+
+.dblock {
+    display: block;
+}
+
+/* remove fish contact form */
+.page-template-auto-generate .fish-background, 
+.page-template-auto-generate-servicespages .fish-background,
+.page-template-auto-generate-state .fish-background,
+.page-template-auto-generate-county .fish-background {
+    display: none;
+}
+
+
+/* template headings */
+.page-template-auto-generate h1,
+.page-template-auto-generate h2,
+.page-template-auto-generate h3,
+.page-template-auto-generate h4,
+.page-template-auto-generate h5,
+.page-template-auto-generate h6, 
+.page-template-auto-generate-servicespages h1,
+.page-template-auto-generate-servicespages h2,
+.page-template-auto-generate-servicespages h3,
+.page-template-auto-generate-servicespages h4,
+.page-template-auto-generate-servicespages h5,
+.page-template-auto-generate-servicespages h6,
+.page-template-auto-generate-state h1,
+.page-template-auto-generate-state h2,
+.page-template-auto-generate-state h3,
+.page-template-auto-generate-state h4,
+.page-template-auto-generate-state h5,
+.page-template-auto-generate-state h6,
+.page-template-auto-generate-county h1,
+.page-template-auto-generate-county h2,
+.page-template-auto-generate-county h3,
+.page-template-auto-generate-county h4,
+.page-template-auto-generate-county h5,
+.page-template-auto-generate-county h6 {
+    text-transform: none;
+	font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif!important;
+}
+
+.page-template-auto-generate-state footer .blurb-link-phone,
+.page-template-auto-generate-county footer .blurb-link-phone {
+    display: none;
+}
+
+
+
+
+
+/* REVISION v1 08/24/2022 */
+:root {
+	--template-font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+	--template-primary-color: #024B79;
+	--template-primary-color-alt: #1f88c8;
+    --template-primary-color-alt-2: #02588D;
+	--template-secondary-color: #6cb83a;
+	--template-header-container: #5cbce0;
+}
+
+/* landing page and services pages here */
+#dev-template-v3 .template-button,
+#dev-template-v3 a,
+.our-services-popup-modal .our-services-popup-sub-modal .our-services-popup-container .our-services-popup-box-container .our-services-popup-box .our-services-popup-contents a,
+#dev-template-v3 #btn,
+#dev-template-v3 p,
+#dev-template-v3 label,
+#dev-template-v3 h1, 
+#dev-template-v3 h2, 
+#dev-template-v3 h3, 
+#dev-template-v3 h4, 
+#dev-template-v3 h5, 
+#dev-template-v3 h6,
+.our-services-popup-modal .our-services-popup-sub-modal .our-services-popup-container .our-services-popup-main-title h3,
+#dev-template-v3 input, 
+#dev-template-v3 textarea,
+.custom-floating-side-tab a {
+	font-family: var(--template-font-family)!important;
+	letter-spacing: 0!important;
+}
+#dev-template-v3 #btn,
+#dev-template-v3 .btn,
+.custom-floating-side-tab a {
+	letter-spacing: 1px!important;
+}
+.pond-text-editor-container h2 {
+	font-size: 2.5em!important;
+}
+#section-4 .contact-box h1, #section-4 .contact-box h2, #section-4 .contact-box h3 {
+	margin-bottom: 0!important;
+}
+#header-company-details h1 {
+	font-size: 20px!important;
+}
+#header-company-details h2 {
+	font-size: 16px!important;
+}
+#header-company-details h3 {
+	font-size: 15px!important;
+}
+#cta-header-container .template-button [class*="icon"],
+#cta-header-container .template-button [class*="fa"] {
+	margin-right: 5px;
+}
+#cta-header-container .template-button {
+	display: flex;
+	align-items: center;
+}
+body .custom-floating-side-tab.custom-floating-side-tab {
+	transform: rotate(-90deg) translateY(167px)!important;
+}
+@media screen and (max-width: 980px) {
+	body .custom-floating-side-tab.custom-floating-side-tab {
+		transform: rotate(-90deg) translateY(172px)!important;
+		top: 0!important;
+	}
+}
+#dev-template-v3 .template-menu-logo-wrap {
+	flex-wrap: nowrap;
+}
+
+.header-cta-container {
+	background: var(--template-header-container)!important;
+}
+
+div#navigation-container .template-menu-logo-wrap div#header-company-details .company-title h1 {
+	color: var(--template-secondary-color)!important;
+}
+
+#dev-template-v3 #btn,
+#dev-template-v3 .btn {
+	background: var(--template-primary-color)!important;
+}
+
+#dev-template-v3 #btn:hover,
+#dev-template-v3 .btn:hover {
+	background: var(--template-secondary-color)!important;
+}
+
+#dev-template-v3 .header-column-container #btn:hover,
+#dev-template-v3 .header-column-container .btn:hover {
+	background: var(--template-primary-color)!important;
+}
+
+#dev-template-v3 .formContactSubmit input[type="submit"],
+#dev-template-v3 .formQuoteSubmit input[type="submit"] {
+	background: var(--template-primary-color)!important;
+	border-color: var(--template-primary-color)!important;
+    cursor: pointer!important;
+}
+
+#dev-template-v3 .formContactSubmit input[type="submit"]:hover,
+#dev-template-v3 .formQuoteSubmit input[type="submit"]:hover {
+	background: var(--template-secondary-color)!important;
+	border-color: var(--template-secondary-color)!important;
+}
+
+.pond-text-editor-container h4,
+.info-links-section-title .pond-text-editor-container h4 {
+    color: var(--template-primary-color)!important;
+}
+
+body #dev-template-v3 #section-3 a:not(#btn), 
+body #dev-template-v3 #section-4 a:not(#btn), 
+body #dev-template-v3 #gallery-section a:not(#btn), 
+body #dev-template-v3 #gallery-section #section-7 a:not(#btn) {
+    color: var(--template-primary-color)!important;
+}
+
+body #dev-template-v3 #section-3 a:not(#btn):hover, 
+body #dev-template-v3 #section-4 a:not(#btn):hover, 
+body #dev-template-v3 #gallery-section a:not(#btn):hover, 
+body #dev-template-v3 #gallery-section #section-7 a:not(#btn):hover {
+    color: var(--template-secondary-color)!important;
+}
+
+.info-link-text-editor-title,
+.our-services-popup-modal .our-services-popup-sub-modal .our-services-popup-container .our-services-popup-box-container .our-services-popup-box .our-services-popup-box-title {
+    background: var(--template-primary-color)!important;
+}
+
+.info-links-boxes-container > .info-link-box,
+.our-services-popup-modal .our-services-popup-sub-modal .our-services-popup-container .our-services-popup-box-container .our-services-popup-box {
+    border-color: var(--template-primary-color)!important;
+}
+
+#dev-template-v3 .template-menu-logo-wrap {
+    background: var(--template-primary-color)!important;
+}
+
+.info-link-text-editor-title h1,
+.info-link-text-editor-title h2,
+.info-link-text-editor-title h3,
+.info-link-text-editor-title h4,
+.info-link-text-editor-title h5,
+.info-link-text-editor-title h6 {
+    color: #ffffff!important;
+}
+
+#desktop-icons-container .header-link span {
+    background: var(--template-primary-color)!important;
+}
+
+#section-2 #pond-description .pond-text-editor-container h4,
+#section-2 #pond-description .pond-text-editor-container h5 {
+    color: var(--template-secondary-color)!important;
+}
+
+#section-2 #pond-description {
+    background: var(--template-primary-color)!important;
+}
+
+.custom-floating-side-tab a {
+    background: var(--template-primary-color-alt-2)!important;
+}
+
+
+body #dev-template-v3 #info-links-section a:not(#btn),
+body .our-services-popup-contents a:not(#btn),
+body .our-services-popup-main-title a {
+    color: var(--template-primary-color)!important;
+}
+
+body #dev-template-v3 #info-links-section a:not(#btn):hover,
+body .our-services-popup-contents a:not(#btn):hover,
+body .our-services-popup-main-title a:hover {
+    color: var(--template-secondary-color)!important;
+}
+
+#dev-template-v3 .required {
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+#dev-template-v3 #pond-about a {
+    font-family: var(--template-font-family)!important;
+    font-size: inherit!important;
+}
+
+div#shushu-floating-icon .shushu-floating-button {
+    background: var(--template-primary-color-alt-2)!important;
+}
+
+a.back-to-top-main-div {
+    background: var(--template-primary-color-alt-2)!important;
+}
+
+/* states and counties pages here */
+.nf-section-1 .nf-section-1-title h1,
+.nf-section-2 h3,
+.new-row-feature-below-map .nf-1-title h3, 
+.new-row-feature-below-map .nf-2-title h3 {
+	letter-spacing: 1px!important;
+}
+
+.nf-1-button {
+	font-family: var(--template-font-family)!important;
+	letter-spacing: 1px!important;
+	display: flex;
+	align-items: center;
+	background: var(--template-primary-color)!important;
+    color: #ffffff!important;
+}
+.nf-1-button:hover {
+	background: var(--template-secondary-color)!important;
+    color: #ffffff!important;
+}
+.nf-1-button [class*="icon"] {
+	margin-right: 5px!important;
+}
+.nf-1-button:hover {
+	letter-spacing: 1px!important;
+}
+.popuplocation,
+.atf-modal {
+	z-index: 999999!important;
+}
+.dnmcontentmapgen div.btn {
+	display: flex;
+}
+.nf-section-1 {
+	background-image: linear-gradient(180deg,var(--template-primary-color) 0%,var(--template-primary-color-alt) 100%)!important;
+}
+.nf-section-1 * {
+    color: #ffffff!important;
+}
+.nf-accordion-description a:hover {
+	color: var(--template-secondary-color)!important;
+}
+.custom-geolocation-link {
+    background-color: var(--template-primary-color-alt-2)!important;
+    letter-spacing: inherit!important;
+}
+.custom-geolocation-link a:hover {
+    color: #ffffff!important;
+    letter-spacing: inherit!important;
+}
+.map-module-options-wrapper .nf-1-button {
+    padding: 5px 20px!important;
+}
+.nf-btn-animated {
+    background-color: var(--template-secondary-color)!important;
+    color: #ffffff!important;
+}
+.nf-accordion-title {
+    background-color: var(--template-primary-color)!important;
+}
+.nf-accordion-title.nf-active {
+    background-color: #ffffff!important;
+    color: var(--template-primary-color)!important;
+}
+.customer-grid.items .csgridheader a {
+    color: var(--template-primary-color)!important;
+}
+.customer-grid.items .csgridheader a:hover {
+    color: var(--template-secondary-color)!important;
+}
+.customer-grid.items .csgridheader .csgridtitle {
+    font-size: 30px!important;
+}
+.nf-section-2 h5 {
+    color: var(--template-primary-color)!important;
+}
+body .nf-accordion-description a {
+    color: var(--template-primary-color)!important;
+}
+body .nf-accordion-description a:hover {
+    color: var(--template-secondary-color)!important;
+}
+/* END OF REVISION */
+
+
+
+/* page breadcrumbs */
+.page-breadcrumbs {
+    padding: 20px 0!important;
+}
+.page-breadcrumbs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	list-style: none;
+    font-weight: 500;
+}
+.page-breadcrumbs ul li {
+    padding: 0 5px;
+}
+.page-breadcrumbs ul li,
+.page-breadcrumbs ul li a {
+    font-size: 13px!important;
+}
+.page-breadcrumbs ul li a {
+    color: var(--template-primary-color)!important;
+}
+.page-breadcrumbs ul li a:hover {
+    color: var(--template-secondary-color)!important;
+}
+.page-breadcrumbs .text-capitalize {
+    text-transform: capitalize;
+}
+/* end of page breadcrumbs*/
+
+
+
+/* section 6 table no border */
+.custon-6-section table:not(.nodefault-styling) {
+    border-width: 0!important;
+	table-layout: fixed;
+}
+.custon-6-section table:not(.nodefault-styling) tr:not(:last-child) td {
+    border-bottom: 2px solid #eee;
+    border-bottom-width: 2px!important;
+	width: 100%;
+}
+.custon-6-section table:not(.nodefault-styling) td {
+    border-width: 0!important;
+    padding: 20px 5px;
+}
+@media screen and (max-width: 979px) {
+	.custon-6-section table:not(.nodefault-styling) tbody {
+		display: table-caption;
+	}
+    .custon-6-section table:not(.nodefault-styling) td {
+        border-bottom: 2px solid #eee;
+        border-bottom-width: 2px!important;
+    }
+    .custon-6-section table:not(.nodefault-styling) tr:last-child td:last-child {
+        border-bottom-width: 0!important;
+    }
+    .custon-6-section table:not(.nodefault-styling) tr {
+        display: block;
+    }
+    .custon-6-section table:not(.nodefault-styling) tr td {
+        width: 100%;
+        display: block;
+    }
+}
+/* end of section 6*/
+
+/* unpaid buttons */
+.unpaid-button-slides a span {
+    color: #ffffff!important;
+}
+/* end of unpaid buttons*/
+
+
+
+/* button icons */
+#desktop-icons-container {
+    display: flex;
+    align-items: center;
+}
+
+
+#desktop-icons-container a {
+    width: 36px;
+    height: 36px;
+    margin: 0 3px;
+    background: var(--template-primary-color)!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+#desktop-icons-container a span,
+#desktop-icons-container a i {
+    background: transparent!important;
+}
+
+
+#social-footer img {
+    width: 30px;
+    height: 30px;
+}
+
+#social-footer [data-icon="custom"] img {
+    background: #000000;
+    border-radius: 50%;
+}
+/* end of button icons*/
+
+
+/* social icons header */
+div#dev-template-v3 .header-main-container .soc-header {
+    font-size: 14px!important;
+}
+
+div#dev-template-v3 .header-main-container .header-link .set-social-icon {
+    width: 100%;
+	margin-right: 0;
+}
+/* end of social icons header */

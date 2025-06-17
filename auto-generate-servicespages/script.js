@@ -1,0 +1,167 @@
+if(document.querySelectorAll(".atf-form-open").length > 0){
+    for(i = 0; i < document.querySelectorAll(".atf-form-open").length; i++){
+        document.querySelectorAll(".atf-form-open")[i].addEventListener("click", function () {
+            document.body.classList.add("open-atf-form");
+        })
+    }
+    if(document.querySelectorAll(".close-click").length > 0){
+        for(i = 0; i < document.querySelectorAll(".close-click").length; i++){
+            document.querySelectorAll(".close-click")[i].onclick = function(){
+                document.body.classList.remove("open-atf-form");
+            }
+        }
+    }
+}
+if(document.querySelectorAll("#header-services .header-services").length > 0){
+    for(i = 0; i < document.querySelectorAll("#header-services .header-services").length; i++){
+		document.querySelectorAll("#header-services .header-services")[i].addEventListener("click",function(){
+		   document.body.classList.add("open-services-modal");
+		});
+	}
+	if(document.querySelectorAll("#header-service-lists .close-click-services").length > 0){
+		for(i = 0; i < document.querySelectorAll("#header-service-lists .close-click-services").length; i++){
+			document.querySelectorAll("#header-service-lists .close-click-services")[i].addEventListener("click",function(){
+			   document.body.classList.remove("open-services-modal");
+			});
+		}
+	}
+}
+
+if(document.querySelectorAll(".modal-close-bg").length > 0){
+  for(i = 0; i < document.querySelectorAll(".modal-close-bg").length; i++){
+    document.querySelectorAll(".modal-close-bg")[i].addEventListener("click", function () {
+        document.body.classList.remove("modal-open");
+    })
+  }
+}
+
+document.querySelectorAll(".file-upload-content").length > 0 &&
+    document.querySelectorAll(".file-upload-content")[0].addEventListener("click", function () {
+        this.querySelectorAll("input[type=file]")[0].click();
+    }),
+    document.querySelectorAll(".mobile-show.hamburger").length > 0 &&
+        document.querySelectorAll(".mobile-show.hamburger")[0].addEventListener("click", function () {
+            var e = document.querySelectorAll(".nav-links-container-mobile")[0];
+            e.parentNode.classList.contains("open") ? e.parentNode.classList.remove("open") : e.parentNode.classList.add("open");
+        }),
+    document.querySelectorAll(".modal-button").length > 0 &&
+        document.querySelectorAll(".modal-button")[0].addEventListener("click", function () {
+            document.body.classList.remove("modal-open"), (document.querySelectorAll("input#consent")[0].checked = !0);
+        }),
+    document.querySelectorAll(".modal-opener-services").length > 0 &&
+        document.querySelectorAll(".modal-opener-services")[0].addEventListener("click", function () {
+            document.body.classList.add("modal-open");
+        }),     
+
+
+
+jQuery(function($) {
+    var Accordion = function(el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+
+        // Variables privadas
+        var links = this.el.find('.template-accordion-title');
+        // Evento
+        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+
+    Accordion.prototype.dropdown = function(e) {
+        var $el = e.data.el;
+            $this = $(this),
+            $next = $this.next();
+
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+
+        if (!e.data.multiple) {
+            $el.find('.template-accordion-description').not($next).slideUp().parent().removeClass('open');
+        };
+    }
+
+    var accordion = new Accordion(jQuery('#accordion'), false);          
+}); 
+
+
+/*Image Hover*/
+const imgToHover = document.querySelectorAll(".move-mouse-add");
+function showImgContent(e) {
+    document.removeEventListener('mousemove', showImgContent);
+
+    // e = Mouse click event.
+    var rect = e.target.getBoundingClientRect();
+    var x = e.clientX - rect.left; //x position within the element.
+    var y = e.clientY - rect.top;  //y position within the element.
+
+
+    this.querySelectorAll("span.img-content-hover")[0].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+};
+
+for(i = 0; i < imgToHover.length; i++){
+imgToHover[i].addEventListener('mousemove', showImgContent);
+}
+/*End of Image Hover*/
+
+
+jQuery(document).ready( function() {
+    jQuery('.atf-slider-content-bg').not('.slick-initialized').slick({
+        autoplay: true,
+        autoplaySpeed: 4000 || 3000,
+        fade: true,
+        cssEase: 'linear',
+        speed: 500,
+    });
+});
+
+jQuery(function (e) { 
+    var $jq = jQuery.noConflict();
+
+    $jq(document).ready(function() { 
+        
+        var mobileLink = document.querySelectorAll(".nav-links-container-mobile div#hamburg-menu-custom")[0]
+        
+        if(mobileLink) {
+            mobileLink.onclick = function(){
+                var checkClass = document.body.classList.contains("open-sub-nav");
+
+                if(checkClass){
+                    document.body.classList.remove("open-sub-nav");
+                }else{
+                    document.body.classList.add("open-sub-nav");
+                }
+            }
+        }
+
+        window.addEventListener("scroll",function() {
+            myFunction(); 
+            //myFunctionSub();
+        });
+
+        var header = document.querySelectorAll(".et_pb_section_3_tb_header.et_pb_sticky_module")[0];
+        var sticky = header.offsetTop;
+        var headerSub = document.querySelectorAll("#dev-template-v3 .header-main-container")[0];
+        var stickySub = header.offsetTop;
+
+        function myFunctionSub() {
+            if(!headerSub) { return; }
+            if (window.pageYOffset > stickySub) {
+            headerSub.classList.add("sticky-shu-shu");    
+            } else {
+            headerSub.classList.remove("sticky-shu-shu");    
+            }
+        }
+
+        function myFunction() {
+            if(!header) { return; }
+            if (window.pageYOffset > sticky) {
+            header.classList.add("sticky-shu-shu");
+            header.style = "";
+            } else {
+            header.classList.remove("sticky-shu-shu");
+            header.style = "";
+            }
+        }
+    
+
+    });
+});

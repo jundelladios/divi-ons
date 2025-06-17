@@ -1,0 +1,204 @@
+{
+    "states": [
+        {
+            "state": "alabama",
+            "abv": "al"
+        },
+        {
+            "state": "alaska",
+            "abv": "ak"
+        },
+        {
+            "state": "arizona",
+            "abv": "az"
+        },
+        {
+            "state": "arkansas",
+            "abv": "ar"
+        },
+        {
+            "state": "california",
+            "abv": "ca"
+        },
+        {
+            "state": "colorado",
+            "abv": "co"
+        },
+        {
+            "state": "connecticut",
+            "abv": "ct"
+        },
+        {
+            "state": "delaware",
+            "abv": "de"
+        },
+        {
+            "state": "florida",
+            "abv": "fl"
+        },
+        {
+            "state": "georgia",
+            "abv": "ga"
+        },
+        {
+            "state": "hawaii",
+            "abv": "hi"
+        },
+        {
+            "state": "idaho",
+            "abv": "id"
+        },
+        {
+            "state": "illinois",
+            "abv": "il"
+        },
+        {
+            "state": "indiana",
+            "abv": "in"
+        },
+        {
+            "state": "iowa",
+            "abv": "ia"
+        },
+        {
+            "state": "kansas",
+            "abv": "ks"
+        },
+        {
+            "state": "kentucky",
+            "abv": "ky"
+        },
+        {
+            "state": "louisiana",
+            "abv": "la"
+        },
+        {
+            "state": "maine",
+            "abv": "me"
+        },
+        {
+            "state": "maryland",
+            "abv": "md"
+        },
+        {
+            "state": "massachusetts",
+            "abv": "ma"
+        },
+        {
+            "state": "michigan",
+            "abv": "mi"
+        },
+        {
+            "state": "minnesota",
+            "abv": "mn"
+        },
+        {
+            "state": "mississippi",
+            "abv": "ms"
+        },
+        {
+            "state": "missouri",
+            "abv": "mo"
+        },
+        {
+            "state": "montana",
+            "abv": "mt"
+        },
+        {
+            "state": "nebraska",
+            "abv": "ne"
+        },
+        {
+            "state": "nevada",
+            "abv": "nv"
+        },
+        {
+            "state": "new hampshire",
+            "abv": "nh"
+        },
+        {
+            "state": "new jersey",
+            "abv": "nj"
+        },
+        {
+            "state": "new mexico",
+            "abv": "nm"
+        },
+        {
+            "state": "new york",
+            "abv": "ny"
+        },
+        {
+            "state": "north carolina",
+            "abv": "nc"
+        },
+        {
+            "state": "north dakota",
+            "abv": "nd"
+        },
+        {
+            "state": "ohio",
+            "abv": "oh"
+        },
+        {
+            "state": "oklahoma",
+            "abv": "ok"
+        },
+        {
+            "state": "oregon",
+            "abv": "or"
+        },
+        {
+            "state": "pennsylvania",
+            "abv": "pa"
+        },
+        {
+            "state": "rhode island",
+            "abv": "ri"
+        },
+        {
+            "state": "south carolina",
+            "abv": "sc"
+        },
+        {
+            "state": "south dakota",
+            "abv": "sd"
+        },
+        {
+            "state": "tennessee",
+            "abv": "tn"
+        },
+        {
+            "state": "texas",
+            "abv": "tx"
+        },
+        {
+            "state": "utah",
+            "abv": "ut"
+        },
+        {
+            "state": "vermont",
+            "abv": "vt"
+        },
+        {
+            "state": "virginia",
+            "abv": "va"
+        },
+        {
+            "state": "washington",
+            "abv": "wa"
+        },
+        {
+            "state": "west virginia",
+            "abv": "wv"
+        },
+        {
+            "state": "wisconsin",
+            "abv": "wi"
+        },
+        {
+            "state": "wyoming",
+            "abv": "wy"
+        }
+    ]
+}

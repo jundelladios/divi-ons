@@ -1,0 +1,134 @@
+.map-module-wrapper .map-module-options-wrapper {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 8px;
+}
+
+.map-module-wrapper .cblock {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.map-module-wrapper .cbtn .et-pb-icon {
+    display: inline;
+    margin: 0;
+}
+
+.map-module-wrapper .map-module-content .map-module-close {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ababab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    color: #ababab;
+    z-index: 0;
+    right: 30px;
+    top: 20px;
+}
+
+.map-module-wrapper .map-module-content-wrapper .map-module-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.map-module-wrapper .dnmcontentmapgen {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.map-module-wrapper .dnmcontentmapgen .dnmimg {
+    width: 100px;
+    padding-right: 10px;
+}
+
+.map-module-wrapper .dnmcontentmapgen .dnmc {
+    width: calc(100% - 100px);
+}
+
+.map-module-wrapper .dnmcontentmapgen .dnmheader {
+    display: flex;
+}
+
+.map-module-wrapper .dnmcontentmapgen .dnmcontent {
+    color: #222222;
+}
+
+.map-module-wrapper .dnmcontentmapgen .dnmdetails h2,
+.map-module-wrapper .dnmcontentmapgen .dnmdetails h3,
+.map-module-wrapper .dnmcontentmapgen .dnmdetails h4,
+.map-module-wrapper .dnmcontentmapgen .dnmdetails h5,
+.map-module-wrapper .dnmcontentmapgen .dnmdetails h6 {
+    font-size: 14px!important;
+}
+
+.map-module-wrapper .dnmcontentmapgen hr {
+    border: 0;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 20px 0;
+}
+
+.map-module-wrapper .dnmcontentmapgen .et-pb-icon {
+    font-size: 14px;
+    padding: 0;
+}
+
+.map-module-wrapper .dnmcontentmapgen .dnmlink { display: inline-flex; align-items: baseline; }
+
+.map-module-wrapper .themapwrap { position: relative; }
+
+.map-module-wrapper .tagsfilters,
+.map-module-wrapper .statefilters {
+    text-align: center;
+    padding: 20px;
+}
+
+.map-module-wrapper .tagsfilters label {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.generator-sc .cbtn {
+    margin: 5px;
+}
+
+.generator-sc .cbtn .et-pb-icon {
+    font-size: 14px;
+}
+
+/* .customers.grid-module-wrapper .customer-grid {
+    margin-bottom: 1rem;
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+}
+
+.customers.grid-module-wrapper .cs-grid-btn-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.customers.grid-module-wrapper p {
+    padding: 0;
+}
+
+.customers.grid-module-wrapper .mapframe {
+    margin-top: 20px;
+}
+
+.customers.grid-module-wrapper .csgridheader {
+    text-align: center;
+} */
+
+[data-mapgen-loading-showhide] {
+    display: none;
+}

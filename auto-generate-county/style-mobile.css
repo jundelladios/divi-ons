@@ -1,0 +1,75 @@
+@media (max-width: 1025px){
+    .nf-section-1 .nf-section-1-title h1 {
+        font-size: 30px;
+    }
+    
+    .nf-section-1 .nf-section-1-title h5 {
+        font-size: 15px;
+    }
+    
+    .nf-section-2 h3 {
+        font-size: 25px;
+    }
+    
+    .nf-section-2 h5 {
+        font-size: 15px;
+    }
+    
+    .new-row-feature-below-map .new-feature-first-row {
+        display: block;
+    }    
+
+    .new-row-feature-below-map .nf-1-title h3, .new-row-feature-below-map .nf-2-title h3 {
+        font-size: 25px;
+    }
+        
+    .new-row-feature-below-map .nf-content-left-side {
+        padding-right: 0;
+    }
+    
+    .new-row-feature-below-map .adds-right-side {
+        height: 600px;
+    }
+        
+    .new-row-feature-below-map .nf-image-container {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 769px){
+    .new-row-feature-below-map .nf-image-container .nf-image img{
+        height: 350px;
+    }
+    .new-row-feature-below-map .nf-image-container .nf-image {
+        margin-right: 0;
+    }
+    .new-row-feature-below-map .nf-image-container {
+        display: block;
+    }
+
+    /*
+    Text Editor
+    */
+    .nf-div h1{
+        font-size: 35px;
+    }
+    .nf-div h2{
+        font-size: 30px;
+    }
+    .nf-div h3{
+        font-size: 25px;
+    }
+    .nf-div h4{
+        font-size: 23px;
+    }
+    .nf-div h5{
+        font-size: 20px;
+    }
+    .nf-div h6{
+        font-size: 18px;
+    }
+    .nf-div p{
+        font-size: 16px;
+    }
+    /*Text editor end*/
+}
