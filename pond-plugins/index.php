@@ -1,6 +1,8 @@
 <?php
 
 /** POND THEME PLUGIN EXTENSION */
+require get_stylesheet_directory() . '/pond-plugins/optimization.php';
+
 require get_stylesheet_directory() . '/pond-plugins/caches.php';
 
 
