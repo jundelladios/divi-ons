@@ -111,25 +111,13 @@ jQuery(function (e) {
 
         window.addEventListener("scroll",function() {
             myFunction(); 
-            //myFunctionSub();
         });
 
-        var header = document.querySelectorAll(".et_pb_section_3_tb_header.et_pb_sticky_module")[0];
-        var sticky = header.offsetTop;
-        var headerSub = document.querySelectorAll("#dev-template-v3 .header-main-container")[0];
-        var stickySub = header.offsetTop;
-
-        function myFunctionSub() {
-            if(!headerSub) { return; }
-            if (window.pageYOffset > stickySub) {
-            headerSub.classList.add("sticky-shu-shu");    
-            } else {
-            headerSub.classList.remove("sticky-shu-shu");    
-            }
-        }
-
         function myFunction() {
+            var header = document.querySelectorAll(".et_pb_section_3_tb_header.et_pb_sticky_module")[0];
             if(!header) { return; }
+            var sticky = header?.offsetTop;
+            if(!sticky) { return; }
             if (window.pageYOffset > sticky) {
             header.classList.add("sticky-shu-shu");
             header.style = "";
