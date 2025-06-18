@@ -1,14 +1,21 @@
 <?php
 
+function ons_referer_portal_api() {
+  $portal = carbon_get_theme_option('portal_admin');
+  $referer = $_SERVER['HTTP_REFERER'] ?? '';
+  if(str_contains( $referer, $portal )) {
+    return true;
+  }
+  return false;
+}
+
 add_action( 'rest_api_init', function () {
   register_rest_route( 'autogenerate/v1', 'page-templates', array(
     'methods' => 'GET',
     'callback' => function() {
       return wp_get_theme()->get_page_templates();
     },
-  'permission_callback' => function() {
-      return true;
-    }
+  'permission_callback' => 'ons_referer_portal_api'
   ));
 	
 	register_rest_route( 'autogenerate/v1', 'sitemap-generate', array(
@@ -20,9 +27,7 @@ add_action( 'rest_api_init', function () {
 		  }
 		  return 0;
 	  },
-		'permission_callback' => function() {
-        return true;
-      }
+		'permission_callback' => 'ons_referer_portal_api'
     ));
 	
 	
@@ -31,15 +36,6 @@ add_action( 'rest_api_init', function () {
       'methods' => 'POST',
       'callback' => function($request) {
         $tasks = [];
-
-        $portal = carbon_get_theme_option('portal_admin');
-        $tasks[] = $portal;
-        
-        $ip = $_SERVER['REMOTE_ADDR'] ?? '';
-        $hostname = gethostbyaddr($ip);
-
-        $tasks[] = $ip;
-        $tasks[] = $hostname;
 
         // clear object cache memcache, redis
         if (function_exists('wp_cache_flush')) {
@@ -65,9 +61,7 @@ add_action( 'rest_api_init', function () {
           'tasks' => $tasks
         ];
       },
-        'permission_callback' => function() {
-            return true;
-        }
+      'permission_callback' => 'ons_referer_portal_api'
     ));
     // end of nitropack api clear cache
 
