@@ -57,7 +57,7 @@ use Carbon_Fields\Field;
         ) )
         ->add_fields( array(
             Field::make( 'text', 'ponds_map_api', 'Enter Google Map API' )
-            ->set_default_value( 'AIzaSyAW4OQbtZUZZ77lmkZER9_DRma7ETQCwc0' )
+            ->set_default_value( '' )
         ) )
         ->add_fields( array(
             Field::make( 'text', 'ponds_inquiry_url', 'Enter Inquiry URL' )
@@ -73,7 +73,7 @@ use Carbon_Fields\Field;
         ) )
         ->add_fields( array(
           Field::make( 'text', 'ponds_recaptcha_sitekey', 'Enter reCAPTCHA Site Key' )
-          ->set_default_value( '6Lenpz8gAAAAALZB_VWtVF62-qA-4HH8MlWvo1zV' )
+          ->set_default_value( '' )
         ) )
         ->add_fields( array(
           Field::make( 'text', 'ponds_terms_url', 'Enter Terms URL' )
