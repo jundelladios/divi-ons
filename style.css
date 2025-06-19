@@ -5,7 +5,7 @@ Template: Divi
 Author: AD-IOS Digital Marketing Co.
 Author URI: https://ad-ios.com/support
 Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
-Version: 1.8.3
+Version: 1.8.5
 */
 
 .dblock {
@@ -466,9 +466,18 @@ div#dev-template-v3 .header-main-container .header-link .set-social-icon {
 /* end of social icons header */
 
 
-.page-template-auto-generate .slick-next,
-.page-template-auto-generate .slick-prev {
+body[class*="auto-generate"] .slick-next,
+body[class*="auto-generate"] .slick-prev {
     border: 0!important;
     background: transparent!important;
     font-size: 0!important;
+    z-index: 9!important;
+}
+
+body[class*="auto-generate"] .slick-prev {
+    left: -45px!important;
+}
+
+body[class*="auto-generate"] .slick-next {
+    right: -45px!important;
 }
