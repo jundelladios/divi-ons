@@ -22,6 +22,7 @@ add_filter( 'locale_stylesheet_uri', 'ons_theme_rtl_locale_css' );
 if ( !function_exists( 'ons_theme_parent_css' ) ):
     function ons_theme_parent_css() {
         wp_enqueue_style( 'ons_theme_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array(  ) );
+        wp_enqueue_style( 'ons_theme_child', trailingslashit( get_stylesheet_directory_uri() ) . 'style.css', array( 'ons_theme_parent' ) );
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'ons_theme_parent_css', 10 );
